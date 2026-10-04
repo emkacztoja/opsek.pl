@@ -135,6 +135,15 @@
         line-height: 1.65;
       }
 
+      .cta-cue {
+        display: inline-block;
+        flex: 0 0 auto;
+        color: var(--accent);
+        font-size: clamp(3.25rem, 5vw, 5rem);
+        font-weight: 300;
+        line-height: 0.8;
+      }
+
       .cta {
         display: inline-flex;
         min-height: 3.35rem;
@@ -241,6 +250,7 @@
         .top-note { max-width: 10rem; text-align: right; line-height: 1.5; }
         .hero { padding-block: 6rem 4.5rem; }
         .hero-bottom { align-items: flex-start; flex-direction: column; gap: 1.5rem; }
+        .cta-cue { margin-left: 0.8rem; transform: rotate(90deg); transform-origin: left center; }
         .bottom-bar { align-items: flex-start; flex-direction: column; padding-block: 1.2rem; }
         .focus-list, .product-list { gap: 0.6rem 1rem; }
       }
@@ -269,6 +279,7 @@
         <h1 id="headline">Hard problems.<br><span>Practical tools.</span></h1>
         <div class="hero-bottom">
           <p class="intro">OPSEK builds software for automation and infrastructure — tools that save time or money.</p>
+          <span class="cta-cue" aria-hidden="true">→</span>
           <button id="learn-more" class="cta" type="button">
             <span>Learn more</span>
             <span class="cta-arrow" aria-hidden="true">↗</span>
